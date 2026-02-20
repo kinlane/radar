@@ -79381,7 +79381,7 @@ function renderBanner(renderFullRadar) {
   } else {
     var header = d3.select('body').insert('header', '#radar');
     header.append('div').attr('class', 'radar-title').append('div').attr('class', 'radar-title__text').append('h1').text(document.title).style('cursor', 'pointer').on('click', renderFullRadar);
-    header.select('.radar-title').append('div').attr('class', 'radar-title__logo').html('<a href="https://www.thoughtworks.com"> <img src="/radar/images/logo.png" /> </a>');
+    header.select('.radar-title').append('div').attr('class', 'radar-title__logo').html('<a href="https://www.thoughtworks.com"> <img src="/images/logo.png" /> </a>');
   }
 }
 module.exports = {
@@ -81676,7 +81676,7 @@ function plotLoading(content) {
   }
 }
 function plotLogo(content) {
-  content.append('div').attr('class', 'input-sheet__logo').html('<a href="https://www.thoughtworks.com"><img src="/radar/images/tw-logo.png" alt="logo"/ ></a>');
+  content.append('div').attr('class', 'input-sheet__logo').html('<a href="https://www.thoughtworks.com"><img src="/images/tw-logo.png" alt="logo"/ ></a>');
 }
 function plotFooter(content) {
   content.append('div').attr('id', 'footer').append('div').attr('class', 'footer-content').append('p').html('Powered by <a href="https://www.thoughtworks.com"> Thoughtworks</a>. ' + 'By using this service you agree to <a href="https://www.thoughtworks.com/radar/tos">Thoughtworks\' terms of use</a>. ' + 'You also agree to our <a href="https://www.thoughtworks.com/privacy-policy">privacy policy</a>, which describes how we will gather, use and protect any personal data contained in your public Google Sheet. ' + 'This software is <a href="https://github.com/thoughtworks/build-your-own-radar">open source</a> and available for download and self-hosting.');
